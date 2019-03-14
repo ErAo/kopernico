@@ -1,0 +1,251 @@
+.areasubtitulo {
+	display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 70%;
+    min-width: 290px;
+    margin: 13vh auto 10vh auto;
+
+    h3 {
+    	letter-spacing: 4px;
+    }
+}
+
+.tarjetas-actividades {
+	.page-item-actividad {
+	    display: flex;
+
+	    .imgAct {
+	    }
+
+	    .contenidoAct {
+	        padding: 2vh 2vw;
+
+	    	img {
+	    	    max-width: unset;
+    			width: 5vw;
+	    	}
+
+	    	h3.titulo.letter-white {
+			    font-size: 3vh;
+			    letter-spacing: 4px;
+			}
+
+			p.parrafo.letter-white {
+			    font-weight: 400;
+			    font-size: 1.7vh;
+			    letter-spacing: 3px;
+			}
+	    }
+	}
+}
+
+.filtro-categorias {
+    width: 70%;
+    margin-top: 10vh;
+    margin-bottom: 7vh;
+    overflow: scroll hidden;
+    clip-path: inset(0 0 2vh 0);
+    padding: 4vh 2vw;
+	
+	div {
+		white-space: nowrap;
+		margin-bottom: 0 !important;
+		margin-top: 0;
+		width: 90%;
+		overflow: hidden;
+
+		a {
+	    	margin: 0 2vw 0 0;
+	    	cursor: pointer;
+	    	color: $darkblue;
+	    	transition: 0.6s;
+
+	    	&:hover {
+	    		background: $blue;
+	    		color: $white !important;
+	    	}
+	    }
+	}
+}
+
+.actividad-padre {
+	min-width: 290px;
+	min-height: 300px;
+	height: 55vh;
+	width: 20vw;
+	display: inline-flex;
+	transition: 0.6s;
+
+	.actividad-hijo {
+	    position: relative;
+	    width: 90%;
+	    flex-wrap: nowrap;
+	    align-items: flex-start;
+	    justify-content: flex-end;
+	    flex-direction: column;
+	    padding: 10vh 2vw 3vh 2vw;
+	    min-width: 270px;
+
+		.titulo-actividad-hijo {
+			font-size: 4vh;
+			margin-bottom: 2vh;
+		}
+
+		.subtitulo-actividad-hijo {
+			font-size: 1.8vh;
+			margin-bottom: 2vh;
+		}
+
+		&::before {
+		    content: '';
+		    background: linear-gradient(to bottom, transparent 0%, rgba(255,255,255,0.7) 50%, rgba(255,255,255,0.9) 82%, rgba(255,255,255,0.9) 64%, rgba(255,255,255,1) 104%);
+		    width: 100%;
+		    height: 100%;
+		    left: 0;
+		    top: 0;
+		    position: absolute;
+		}
+	}
+}
+
+.actividad-detalle {
+	.contendor-imgenes {
+		position: relative;
+		min-height: 300px;
+		overflow: hidden;
+
+		div {
+			position: absolute;
+			width: 100%;
+			height: 100%;
+		}
+	}
+
+	.titulo-competencias {
+		font-size: 1.7vh;
+		font-weight: 600;
+		text-transform: uppercase;
+	}
+
+	.list-icono {
+		justify-content: space-between;
+    	margin: 3vh 0;
+    	display: flex;
+
+    	.iconos-item {
+    		display: inline-flex;
+    		flex-direction: column;
+    		justify-content: flex-start;
+    		align-items: center;
+    		text-align: center;
+
+    		img {
+    			width: 50%;
+    			margin-bottom: 2vh;
+    		}
+
+    		p {
+    			word-break: break-word;
+    		}
+    	}
+	}
+}
+
+.caracteristicas-act {
+	margin-top: 10vh;
+
+	.padre-caracteristica {
+		background: $darkblue;
+		padding: 2vh 3vw;
+
+		.caract-item {
+			position: relative;
+			height: 100%;
+			width: 100%;
+			padding-bottom: 2vh;
+
+			.caracteristica-item {
+				background: #fff;
+				padding: 4vh 3vw;
+				overflow: hidden scroll;
+				transition: 0.6s;
+			    position: absolute;
+			    width: 100%;
+			    height: 0;
+			    overflow: hidden;
+
+				.columns.tipo_duracion {
+					div {
+						margin-right: 2vw;
+
+						img {
+						    height: 4vh;
+						    margin-bottom: 2vh;
+						}
+
+						.parrafo {
+							font-size: 1.5vh;
+						}
+
+						.subtitulo {
+							font-size: 1.7vh;
+						}
+					}
+				}
+
+				.titulo-crono {
+					font-weight: 600;
+					font-size: 1.9vh;
+					text-transform: uppercase;
+					margin-top: 2vh;
+					margin-bottom: 4vh;
+					color: $darkblue !important;
+				}
+			}
+		}
+
+		.panel-detalle {
+			a {
+				display: inline-block;
+				margin-right: 2vw;
+				border-radius: unset;
+				transition: 0.6s;
+
+				&:hover {
+					color: $darkblue;
+					background: $white;
+				}
+			}
+
+			.active-caract {
+				color: $darkblue;
+				background: $white;
+			}
+		}
+	}
+
+	.caracteristica-incluye {
+		background: #fff;
+	}
+
+	ul {
+		margin-bottom: 4vh;
+		margin-top: 4vh;
+
+		li {
+			list-style: disc;
+			list-style-position: inside;
+			color: $blue;
+		}
+	}
+
+	p {
+		color: $blue;
+		font-size: 1.6vh;
+	}
+
+	strong {
+		color: $blue !important;
+	}
+}

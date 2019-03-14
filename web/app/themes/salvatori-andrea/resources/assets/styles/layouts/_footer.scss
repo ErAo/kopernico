@@ -1,0 +1,88 @@
+.footer {
+	height: 90vh;
+
+	.contain-contain-form {
+		background: #fff;
+	}
+	
+	.contain-form {
+		width: 70%;
+		position: relative;
+
+		.form-contact {
+			width: 80%;
+
+			input {
+				margin-bottom: 2vh;
+				display: inline-block;
+				border: none;
+
+				&:focus {
+					outline: none;
+				}
+			}
+
+			.field-phone {
+				margin: 0 0 2vh auto;
+				width: 45%;
+			}
+
+			.field-neme {
+				margin: 0 0 2vh auto;
+				width: 45%;
+			}
+
+			textarea {
+				border: none;
+				min-width: 100%;
+			    max-width: 100%;
+			    min-height: 15vh;
+
+				&:focus {
+					outline: none;
+				}
+			}
+
+			.btn-send {
+				cursor: pointer;
+			}
+		}
+
+		.titulo {
+			font-size: 5vh;
+			font-weight: 800;
+		}
+
+		.subtitulo {
+			font-size: 1.5vh;
+			width: 60%;
+    		font-weight: 600;
+    		min-width: 290px;
+    		margin-bottom: 6vh
+		}
+	}
+
+	.info-footer {
+		position: relative;
+		padding: 7vh 5vw;
+		margin: 0 0 0 auto;
+
+		.texto-info-footer {
+			margin: 8vh 0;
+
+			.titulo {
+				font-size: 3vh;
+			}
+
+			.parrafo {
+				font-size: 1.5vh;
+				font-weight: 500;
+			}
+		}
+
+		.copyright {
+			font-size: 1.2vh;
+			font-weight: 600;
+		}
+	}
+}

@@ -1,0 +1,45 @@
+div#slider-equipo-hijo {
+    display: inline-flex;
+    position: relative;
+    transition: .6s;
+    left: 0;
+
+    .actividad-padre{
+    	width: 25vw !important;
+    }
+}
+
+#slider-equipo{
+	overflow: hidden;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+
+.back-azul {
+	height: 80%;
+	width: 95%;
+	position: absolute;
+	top: 0;
+	right: 0;
+	background: $darkblue;
+	z-index: -1;
+}
+
+.equipo-detalle {
+	margin-top: 20vh;
+	margin-bottom: 15vh;
+	display: inline-block;
+}
+
+.slider-actividades-panel {
+	position: absolute;
+	top: 65%;
+	width: 85%;
+    display: flex;
+    justify-content: space-between;
+
+    #equipo-next{
+    	transform: rotate(180deg);
+    }
+}

@@ -1,0 +1,388 @@
+.hero-home {
+	min-height: 100vh;
+	height: auto;
+    position: relative;
+    transition: 0.6s;
+    margin-bottom: 10vh !important;
+
+	.info-hero {
+		.info-hero-text {
+			margin-top: 15vh;
+			width: 60%;
+
+			.btn-info-hero-text {
+				display: inline-block;
+				margin-top: 2vh;
+			}
+		}
+	}
+
+	.slider-hero {
+		.slider-hero-img {
+			margin: 0px 0px 0px auto;
+			height: 60vh;
+			position: relative;
+
+			.item-slider-hero {
+				position: absolute;
+				left: 0;
+				top: 0;
+				height: 100%;
+				opacity: 1;
+				width: 100%;
+				transition: 0.6s;
+			}
+		}
+
+		#slide-hero-cont {
+			position: relative;
+			display: flex;
+		    align-items: center;
+		    justify-content: center;
+
+			.slider-hero-texto {
+	    		max-width: 90%;
+	    		transition: 0.6s;
+	    		position: absolute;
+	    		opacity: 1;
+			}
+		}
+
+		.flechas {
+			color: #006ea3;
+		    height: 50%;
+		    display: flex;
+		    justify-content: center;
+		    align-items: center;
+
+		    img {
+		    	height: 5vh;
+		    	max-width: unset;
+		    	width: auto;
+		    }
+		}
+	}
+}
+
+.actividades-home {
+	.texto-actividades {
+	    text-align: center;
+	    width: 70%;
+	    min-width: 290px;
+	    margin: 0 auto;
+	}
+
+	.buscar-actividades {
+	    width: 80%;
+	    margin: 6vh auto;
+	    flex-wrap: nowrap;
+	    align-items: center;
+	    justify-content: center;
+	    padding: 4vh 5vw;
+
+	    .titulo-buscar {
+	    	font-size: 3vh;
+	    }
+
+	    .select-search {
+		    padding: 1vh 1vw;
+		    font-size: 2vh;
+		    margin: 0 4vw;
+		    border: none;
+		    color: $darkblue;
+		    font-family: 'BebasNeueLight';
+		    font-weight: 600;
+	    }
+	}
+
+	.padre-slider-actividades {
+		position: relative;
+		padding: 4vh 0;
+
+	    .actividades-tarjetas {
+	    	padding: 3vh 0 0 0;
+
+			.slider-actividades {
+				overflow: hidden;
+				margin: 0 auto;
+				position: relative;
+				z-index: 1;
+
+				#slider-actividades-hijo {
+					display: inline-flex;
+					position: relative;
+					transition: 0.6s;
+					left: 0;
+
+					.actividad-padre {
+						min-width: 290px;
+						max-width: 25%;
+						min-height: 300px;
+						height: 55vh;
+						width: 20vw;
+
+						.actividad-hijo {
+						    position: relative;
+						    width: 90%;
+						    flex-wrap: nowrap;
+						    align-items: flex-start;
+						    justify-content: flex-end;
+						    flex-direction: column;
+						    padding: 10vh 2vw 3vh 2vw;
+						    min-width: 270px;
+
+							.titulo-actividad-hijo {
+								font-size: 4vh;
+								margin-bottom: 2vh;
+							}
+
+							.subtitulo-actividad-hijo {
+								font-size: 1.8vh;
+								margin-bottom: 2vh;
+							}
+
+							&::before {
+							    content: '';
+							    background: linear-gradient(to bottom, transparent 0%, rgba(255,255,255,0.7) 50%, rgba(255,255,255,0.9) 82%, rgba(255,255,255,0.9) 64%, rgba(255,255,255,1) 104%);
+							    width: 100%;
+							    height: 100%;
+							    left: 0;
+							    top: 0;
+							    position: absolute;
+							}
+						}
+					}
+				}
+			}
+
+			.slider-actividades-panel {
+			    position: relative;
+			    display: flex;
+			    justify-content: space-between;
+			    padding: 2vh 3vw;
+			    width: 100%;
+			    z-index: 2;
+
+			    img {
+			    	cursor: pointer;
+			    	height: 3vh;
+			    	min-height: 25px;
+			    }
+
+			    #actividades-next {
+			    	transform: rotate(180deg);
+			    }
+			}
+		}
+
+		&::before {
+			content: '';
+		    width: 100%;
+		    height: 45%;
+		    background: $darkblue;
+		    position: absolute;
+		    bottom: 0;
+		}
+	}
+}
+
+.nosotros-home {
+	margin: 10vh auto;
+	
+	.slider-img-nosotros {
+		height: 100%;
+		width: 100%;
+		position: absolute;
+		opacity: 1;
+		left: 0;
+    	top: 0;
+		transition: 0.6s;
+	}
+
+	#padre-slider-nosotros-text {
+		position: relative;
+
+		.slider-text-nosotros {
+			position: absolute;
+			opacity: 1;
+			transition: 0.6s;
+		}
+	}
+
+	.panel-nosotros-home {
+		display: flex;
+		align-item: center;
+		justify-content: center;
+	    height: 100%;
+
+		div {
+    		img {
+    			height: 4vh;
+    			width: auto;
+    			max-width: unset;
+    		}
+		}
+	}
+}
+
+.servicios-home {
+	margin: 10vh 0;
+
+	.tarjetas-servicios {
+		padding-bottom: 3vh;
+    	padding-top: 3vh;
+    	display: flex;
+
+		.item-tarjetas-servicios {
+			padding: 5vh 2vw;
+			display: flex;
+		    justify-content: center;
+		    flex-direction: column;
+		    align-items: flex-start;
+
+			.titulo-hijo-servicios {
+				font-size: 4vh;
+			}
+
+			.imagen-servicio-item {
+			    width: 25%;
+			    padding: 1vh 0 1vh 0;
+			    min-width: 50px;
+			}
+
+			.parrafo {
+				margin-bottom: 3vh;
+			}
+		}
+	}
+}
+
+.publicidad-home {
+	position: relative;
+	margin: 10vh auto;
+
+	.fondo-azul-publicidad {
+		position: absolute;
+	    height: 80%;
+	    width: 83.33333333%;
+	    z-index: -2;
+	}
+
+	.img-pulbicidad {
+		height: 55vh;
+	    top: 10vh;
+	    position: relative;
+	    z-index: -1;
+	}
+
+	.padre-texto-publicidad {
+		top: -5vh;
+	    position: relative;
+	    padding: 5vh 3vw;
+	    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.3);
+	    background: #fff;
+
+	    .titulo {
+	    	margin-bottom: 2vh;
+	    }
+
+	    .parrafo {
+			margin-bottom: 3vh;
+	    }
+
+	    .subtitulo {
+			margin-bottom: 3vh;
+	    }
+
+	    .btn1 {
+	    	display: inline-block;
+	    }
+	}
+}
+
+.blog-home {
+
+	.blog-home-descripcion {
+		width: 70%;
+    	min-width: 280px;
+
+		.titulo {
+			letter-spacing: 5px;
+	    	margin-bottom: 3vh;
+	    }
+
+	    .parrafo {
+			margin-bottom: 3vh;
+	    }
+
+	    .subtitulo {
+			margin-bottom: 4vh;
+			font-size: 2vh;
+	    }
+	}
+
+	#blog-slider {
+		overflow: hidden;
+
+		#blog-slider-hijo {
+			padding: 0 0 6vh 0 !important;
+			display: inline-flex;
+			position: relative;
+			transition: 0.6s;
+			left: 0;
+			
+			.tarjeta-blog-padre {
+				padding-top: 0px;
+			    min-width: 290px;
+			    max-width: 33.333333%;
+			    width: 22vw;
+
+		    	.tarjeta-blog {
+					box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.3);
+
+					.tarjeta-blog-img {
+					    height: 30vh;
+					}
+
+					.tarjeta-blog-text {
+   						padding: 3vh 1.5vw;
+
+					    .titulo {
+							font-size: 4vh;
+					    	margin-bottom: 2vh;
+					    }
+
+					    .parrafo {
+							margin-bottom: 3vh;
+					    }
+
+					    .subtitulo {
+							margin-bottom: 3vh;
+					    }
+
+					    .btn2 {
+					    	display: inline-block;
+					    }
+					}
+				}
+			}
+		}
+	}
+
+	.panel-blog-tarjetas {
+		height: 100%;
+		div {
+			font-size: 5vh;
+		    display: flex;
+		    color: #fff;
+		    align-items: center;
+		    justify-content: center;
+
+		    img {
+		        height: 4vh;
+		        width: auto;
+		        max-width: unset;
+		    }
+		}
+	}
+}

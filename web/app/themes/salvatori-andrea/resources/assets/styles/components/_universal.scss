@@ -1,0 +1,191 @@
+* {
+	letter-spacing: 2px;
+	line-height: normal;
+	color: $darkblue;
+}
+
+h1.titulo, 
+h2.titulo, 
+h3.titulo, 
+h4.titulo {
+	color: $darkblue;
+	font-size: 6vh;
+	font-weight: 500;
+	text-transform: uppercase;
+	font-family: 'BebasNeueRegular';
+	margin: 0 0 2vh 0;
+}
+
+strong {
+	color: $darkblue !important;
+}
+
+blockquote {
+	margin: 2vh 0 2vh 1vw;
+    padding: 1vh 1vw;
+    border-left: 3px solid #006ea3;
+
+    p {
+    	margin: 0;
+    }
+}
+
+ul,
+.listaUl {
+	margin-bottom: 2vh;
+	padding: 0 0 0 1vw;
+
+	li {
+		font-size: 1.7vh;
+		margin: 1vh 0;
+	}
+}
+
+.subtitulo {
+	color: $darkblue;
+	font-weight: 500;
+	font-size: 2.2vh;
+    margin: 0 0 2vh 0;
+}
+
+.text-uppercase {
+	text-transform: uppercase;
+}
+
+.parrafo,
+p {
+	color: $darkblue;
+	margin: 0 0 2vh 0;
+	font-weight: 300;
+	font-size: 1.7vh;
+}
+
+.titulo-p {
+	font-size: 3.5vh;
+	color: $darkblue;
+	font-weight: 500;
+	margin: 0 0 2vh 0;
+	text-transform: uppercase;
+	font-family: 'BebasNeueLight';
+}
+
+.letter-white {
+	color: $white !important;
+}
+
+.letter-blue {
+	color: $darkblue !important;
+}
+
+.content-center {
+	margin: 0 auto;
+}
+
+.btn1 {
+	padding: 1vh 1.5vw;
+    background: $darkblue;
+    color: $white;
+    border-radius: 4px;
+    font-size: 2vh;
+    text-transform: uppercase;
+    font-family: 'BebasNeueLight';
+    margin: 2vh 0;
+    font-weight: 600;
+}
+
+.btn2 {
+	padding: 1vh 2vw;
+	background: $blue;
+    color: $white;
+    border-radius: 4px;
+    font-size: 2vh;
+    text-transform: uppercase;
+    font-family: 'BebasNeueLight';
+    margin: 2vh 0;
+    font-weight: 600;
+}
+
+.bold {
+	font-family: 'BebasNeueRegular';
+}
+
+.light {
+	font-family: 'BebasNeueLight';
+}
+
+.back-darkblue {
+	background: $darkblue;
+}
+
+.back-blue {
+	background: $blue;
+}
+
+.back-white {
+	background: $white; 
+}
+
+.displayInline-block {
+	display: inline-block;
+}
+
+.displayInline-flex {
+	display: inline-flex;
+}
+
+.displayFlex {
+	display: flex;
+}
+
+.add-index {
+	position: relative;
+	z-index: 1;
+}
+
+.negritas {
+	font-weight: 600;
+}
+
+.centercenter {
+	top: 50%;
+	left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.centerLeft {
+	position: relative;
+	left: 50%;
+    transform: translateX(-50%);
+}
+
+.centerTop {
+	top: 50%;
+    transform: translateY(-50%);
+}
+
+.centerflex {
+	justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.centerflex-top {
+    align-items: center;
+    display: flex;
+}
+
+.centerflex-left {
+    justify-content: center;
+    display: flex;
+}
+
+.texto-actividades {
+	text-align: center;
+    width: 60% !important;
+    min-width: 290px;
+    margin: 6vh auto;
+}
+
+.paneles {
+	cursor: pointer;
+}

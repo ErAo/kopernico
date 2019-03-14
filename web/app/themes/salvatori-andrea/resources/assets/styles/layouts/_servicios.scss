@@ -1,0 +1,13 @@
+ul.lista_servicio {
+    padding: 1vh 2vw;
+
+    li.item_lista {
+	    list-style: disc;
+	}
+}
+
+.servicio-item-page:nth-of-type(2n) {
+	.columns.is-multiline {
+		flex-direction: row-reverse;
+	}
+}

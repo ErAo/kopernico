@@ -1,0 +1,138 @@
+@media only screen and (max-width: 1100px) {
+	nav.menu-main .menu-padre {
+		padding: 0;
+	}
+}
+
+@media only screen and (max-width: 950px) {
+	.menu-main_menu-container {
+		opacity: 0;
+	    position: absolute;
+	    right: -200%;
+	    transition: 0.6s;
+	}
+	
+	nav.menu-main {
+		.menu-padre {
+			width: 6vw;
+
+			ul#menu-main_menu {
+			 	li {
+			 		a {
+			 			color: $darkblue !important;
+			 		}
+			 	}
+			}
+		}
+	}
+
+	.mi-burger {
+		display: flex;
+	}
+
+	.actividad-hijo {
+		padding: 4vh 4vw !important;
+	}
+
+	.tarjetas-servicios {
+		width: 90% !important;
+	}
+}
+
+@media only screen and (max-width: 900px) {
+	.blog-home {
+		flex-direction: column;
+
+		.resumen-blog-home {
+			width: auto;
+		    padding: 6vh 0;
+		    margin-bottom: 6vh;
+		}
+
+		#blog-slider {
+			width: 100%;
+		}
+	}
+}
+
+@media only screen and (max-width:  800px) {
+	.footer {
+		display: flex;
+    	flex-direction: column;
+		padding-top: 6vh !important;
+
+		.contain-contain-form {
+		    width: 100%;
+
+		    .contain-form {
+				transform: unset;
+				top: auto;
+
+				form {
+					.field-email {
+						width: 100% !important;
+					}
+				}
+			}
+		}
+	}
+
+	.contain-contain-info {
+		width: 100%;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	.hero-home {
+		flex-direction: column-reverse;
+    	display: flex;
+
+    	.info-hero-text {
+    		width: 80%;
+    	}
+	}
+
+	.padreflechas {
+		display: flex;
+
+		.flechas {
+		    width: 50%;
+		    padding: 2vh 0;
+		}
+	}
+	.slider-actividades {
+		width: 90%;
+	}
+
+	.slider-actividades-panel {
+	    position: relative !important;
+	    width: 100% !important;
+	    top: unset !important;
+		transform: unset !important;
+	}
+
+	.actividad-hijo {
+		padding: 4vh 5vw !important;
+	}
+
+	.item-tarjetas-servicios {
+	    padding: 5vh 4vw !important;
+	    max-width: 270px;
+	}
+
+	.slider-hero-img {
+		height: 55vh !important;
+	}
+}
+
+@media only screen and (max-width: 600px){
+	.footer .contain-form .form-contact input {
+		width: 100% !important;
+	}
+}
+
+@media only screen and (max-width: 550px) {
+	.slider-hero-img {
+		height: 40vh !important;
+	}
+}

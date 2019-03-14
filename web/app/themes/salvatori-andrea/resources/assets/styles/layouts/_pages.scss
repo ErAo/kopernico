@@ -1,0 +1,11 @@
+html {
+	overflow: hidden;
+}
+
+#scrollPers {
+	overflow: hidden scroll;
+	position: absolute;
+    height: 100vh;
+    clip-path: inset(0 0 0 0);
+    width: 100vw;
+}
